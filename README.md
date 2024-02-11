@@ -1,9 +1,9 @@
-# fabric-block-explorer
+# fabric-blockchain-explorer
 Note: You must complete Lab #1, Lab #2 and Lab #3 first which will include the required binary files.
 
 ## Make sure you have a private admin key available for the blockchain explorer
 
-Copy the generated private key to priv_sk
+Copy the generated private key for admin in org1 to priv_sk
 
 For example
 ```
@@ -15,7 +15,7 @@ sudo chmod a+rwx priv_sk  ## this is only done for lab env
 Now go back to your home directory and issue the following commands
 ```
 cd ~
-git clone https://github.com/lley154/fabric-block-explorer.git
+git clone https://github.com/lley154/fabric-blockchain-explorer.git
 cd fabric-block-expoler
 docker-compose up -d
 ```
