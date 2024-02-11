@@ -24,7 +24,7 @@ You can look at the logs from the explorer and check that there are no errors
 sudo docker logs explorer.mynetwork.com -f
 ```
 
-Next, log into the server using a new terminal window to set up port forwarding to access the blockchain explorer UI.
+Next, log into the server using a new terminal window to set up port forwarding to access the blockchain explorer UI using port 8080.
 
 ssh usage
 ```
