@@ -34,7 +34,7 @@ For example
 ```
 ssh -i lab2.pem -L 8080:ec2-54-91-100-220.compute-1.amazonaws.com:8080 ubuntu@ec2-54-91-100-220.compute-1.amazonaws.com
 ```
-Now use a browser on your local machine and access the UI
+Now use a browser on your local machine and access the Hyperledger Blockchain Explorer UI
 ```
 http://localhost:8080/
 ```
