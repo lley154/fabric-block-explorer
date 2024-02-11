@@ -3,7 +3,7 @@ Note: You must complete Lab #1, Lab #2 and Lab #3 first which will include the r
 
 ## Make sure you have a private admin key available for the blockchain explorer
 
-copy the generated private key to priv_sk
+Copy the generated private key to priv_sk
 
 For example
 ```
