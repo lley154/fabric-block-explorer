@@ -1,22 +1,26 @@
 # fabric-blockchain-explorer
 Note: You must complete Lab #1, Lab #2 and Lab #3 first which will include the required binary files.
 
-## Make sure you have a private admin key available for the blockchain explorer
+## Install and make sure you have a private admin key available for the blockchain explorer
 
-Copy the generated private key for admin in org1 to priv_sk
-
-For example
-```
-cd /home/ubuntu/explorer/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/
-cp d5c3c0946461845e5cf9a02d7cb7b25c04ca3827567733ef912dd99d16847b41_sk priv_sk
-sudo chmod a+rwx priv_sk  ## this is only done for lab env
-```
-
-Now go back to your home directory and issue the following commands
+Go to your home directory and issue the following commands
 ```
 cd ~
 git clone https://github.com/lley154/fabric-blockchain-explorer.git
 cd fabric-block-expoler
+sudo cp -r ../fabric-samples/test-network/organizations/ .
+sudo chmod a+rwx organizations ## only required for lab env
+```
+Copy the generated private key for admin in org1 to priv_sk
+
+For example
+```
+cd /home/ubuntu/fabric-blockchain-explorer/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/
+cp d5c3c0946461845e5cf9a02d7cb7b25c04ca3827567733ef912dd99d16847b41_sk priv_sk
+sudo chmod a+rwx priv_sk  ## this is only done for lab env
+```
+Now bring up docker images for postgressDB and explorer UI
+```
 docker-compose up -d
 ```
 You can look at the logs from the explorer and check that there are no errors
