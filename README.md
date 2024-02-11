@@ -19,7 +19,7 @@ cd /home/ubuntu/fabric-blockchain-explorer/organizations/peerOrganizations/org1.
 cp d5c3c0946461845e5cf9a02d7cb7b25c04ca3827567733ef912dd99d16847b41_sk priv_sk
 sudo chmod a+rwx priv_sk  ## this is only done for lab env
 ```
-Now bring up docker images for postgressDB and explorer UI
+Now bring up docker images for postgresDB and explorer UI
 ```
 docker-compose up -d
 ```
@@ -52,5 +52,7 @@ ssh -i lab2.pem -L 8080:ec2-54-91-100-220.compute-1.amazonaws.com:8080 ubuntu@ec
 Now use a browser on your local machine and access the Hyperledger Blockchain Explorer UI
 ```
 http://localhost:8080/
+user: exploreradmin
+pass: exploreradminpw
 ```
 
