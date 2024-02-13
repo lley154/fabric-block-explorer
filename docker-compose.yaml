@@ -48,7 +48,6 @@ services:
       - ${EXPLORER_CONFIG_FILE_PATH}:/opt/explorer/app/platform/fabric/config.json
       - ${EXPLORER_PROFILE_DIR_PATH}:/opt/explorer/app/platform/fabric/connection-profile
       - ${FABRIC_CRYPTO_PATH}:/tmp/crypto
-      - ${WALLET_PATH}:/opt/explorer/wallet
     ports:
       - ${PORT:-8080}:${PORT:-8080}
     depends_on:
