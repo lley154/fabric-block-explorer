@@ -24,7 +24,13 @@ Now bring up docker images for postgresDB and explorer UI
 ```
 sudo docker-compose up
 ```
-The explorer (and postgressDB) docker images should run and there should not be any errors in the logging output.
+The explorer (and postgressDB) docker images should run and there should not be any errors in the logging output.  You should see at the end of the output something like:
+```
+...
+explorer.mynetwork.com      | [2024-02-13T15:34:54.340] [INFO] main - Please open web browser to access ：http://localhost:8080/
+explorer.mynetwork.com      | [2024-02-13T15:34:54.341] [INFO] main - pid is 19
+```
+
 
 Next, log into the server using a new terminal window to set up port forwarding to access the blockchain explorer UI using port 8080.
 
