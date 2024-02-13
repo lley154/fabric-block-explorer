@@ -22,21 +22,7 @@ cd ~/fabric-blockchain-explorer
 ```
 Now bring up docker images for postgresDB and explorer UI
 ```
-sudo docker-compose up -d
-```
-You can look at the logs from the explorer and check that there are no errors
-```
-sudo docker logs explorer.mynetwork.com -f
-```
-
-To shutdown the explorer but keeping persistent data
-```
-docker-compose down
-```
-
-To shudwon the explorer and remove all data
-```
-docker-compose down -v
+sudo docker-compose up
 ```
 
 
