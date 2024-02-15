@@ -8,6 +8,7 @@ Go to your home directory and issue the following commands
 cd ~
 git clone https://github.com/lley154/fabric-blockchain-explorer.git
 cd fabric-blockchain-explorer/
+mkdir wallet
 sudo cp -r ../fabric-samples/test-network/organizations/ . ## copying crypto material, but only do this for a lab env
 sudo chmod a+rwx -R organizations ## only required for lab env
 
