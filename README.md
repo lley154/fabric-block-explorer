@@ -49,5 +49,7 @@ user: exploreradmin
 pass: exploreradminpw
 ```
 
-Response times may be slow, so please wait for pages or links to load. A browser page refresh may also be required. You will see logging info messages when you try to access the explorer.
+Response times may be slow, so please wait for pages or links to load. A browser page refresh may also be required. You will see logging info messages when you try to access the explorer. If you encounter errors, please continue to submit with screen shots of the errors to receive full marks.
+
+
 
