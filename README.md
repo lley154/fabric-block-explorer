@@ -11,7 +11,17 @@ cd fabric-blockchain-explorer/
 mkdir wallet
 sudo cp -r ../fabric-samples/test-network/organizations/ . ## copying crypto material, but only do this for a lab env
 sudo chmod a+rwx -R organizations ## only required for lab env
-
+```
+set the paths in the .env file to point to your home directory
+for example:
+```
+ubuntu@ip-172-31-95-161:~/fabric-blockchain-explorer$ echo $HOME
+/home/ubuntu
+```
+update .env file with the home path for /home/ubuntu
+```
+FABRIC_CRYPTO_PATH=/home/ubuntu/fabric-blockchain-explorer/organizations
+WALLET_PATH=/home/ubuntu/fabric-blockchain-explorer/wallet
 ```
 Copy the generated private key for admin in org1 to priv_sk
 
