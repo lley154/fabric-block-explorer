@@ -3,19 +3,30 @@ Note: You must complete Lab #1, Lab #2 and Lab #3 first which will include the r
 
 ## Install and make sure you have a private admin key available for the blockchain explorer
 
-Go to your home directory and issue the following commands
+Log into Ubuntu and issue the following commands
 ```
 cd ~
+```
+```
 git clone https://github.com/lley154/fabric-blockchain-explorer.git
+```
+```
 cd fabric-blockchain-explorer/
+```
+```
 mkdir wallet
+```
+```
 sudo cp -r ../fabric-samples/test-network/organizations/ . ## copying crypto material, but only do this for a lab env
+```
+```
 sudo chmod a+rwx -R organizations ## only required for lab env
 ```
-set the paths in the .env file to point to your home directory
+Set the paths in the .env file to point to your home directory
 for example:
 ```
-ubuntu@ip-172-31-95-161:~/fabric-blockchain-explorer$ echo $HOME
+echo "FABRIC_CRYPTO_PATH=$HOME/fabric-blockchain-explorer/organizations" >> .env 
+$ echo $HOME
 /home/ubuntu
 ```
 update .env file with the home path for /home/ubuntu
