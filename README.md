@@ -23,16 +23,9 @@ sudo cp -r ../fabric-samples/test-network/organizations/ . ## copying crypto mat
 sudo chmod a+rwx -R organizations ## only required for lab env
 ```
 Set the paths in the .env file to point to your home directory
-for example:
 ```
-echo "FABRIC_CRYPTO_PATH=$HOME/fabric-blockchain-explorer/organizations" >> .env 
-$ echo $HOME
-/home/ubuntu
-```
-update .env file with the home path for /home/ubuntu
-```
-FABRIC_CRYPTO_PATH=/home/ubuntu/fabric-blockchain-explorer/organizations
-WALLET_PATH=/home/ubuntu/fabric-blockchain-explorer/wallet
+echo "FABRIC_CRYPTO_PATH=$HOME/fabric-blockchain-explorer/organizations" >> .env
+echo "WALLET_PATH=$HOME/fabric-blockchain-explorer/wallet" >> .env  
 ```
 Copy the generated private key for admin in org1 to priv_sk
 
@@ -49,7 +42,7 @@ Now bring up docker images for postgresDB and explorer UI
 ```
 sudo docker-compose up
 ```
-The explorer (and postgressDB) docker images should run and there should not be any errors in the logging output.  You should see at the end of the output something like:
+The explorer (and postgressDB) docker images should run and there should not be any errors in the logging output.  You should see near the end of the output something like:
 ```
 ...
 explorer.mynetwork.com      | [2024-02-13T15:34:54.340] [INFO] main - Please open web browser to access ：http://localhost:8080/
