@@ -40,7 +40,7 @@ cd ~/fabric-blockchain-explorer
 ```
 Now bring up docker images for postgresDB and explorer UI
 ```
-sudo docker-compose up
+docker compose up
 ```
 The explorer (and postgressDB) docker images should run and there should not be any errors in the logging output.  You should see near the end of the output something like:
 ```
