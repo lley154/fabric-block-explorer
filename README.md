@@ -1,6 +1,8 @@
 # fabric-blockchain-explorer
 Note: You must complete Lab #1, Lab #2 and Lab #3 first which will include the required binary files.
 
+Important: This requires a network to be up and running with some transactions submitted.
+
 ## Install and make sure you have a private admin key available for the blockchain explorer
 
 Log into Ubuntu and issue the following commands
